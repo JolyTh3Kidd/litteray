@@ -49,7 +49,12 @@ body._lock {
     max-width: 360px;
     margin-top: 60px;
 }
-
+.creator {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
 .page {
     padding: 90px 0px 30px 0px;
 }
@@ -65,10 +70,10 @@ body._lock {
     max-width: 800px;
 }
 .page__section_2 {
-    display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    display: flex;
+    max-width: 100%
 }
 .page__section_3 {
     max-width: 500px;
@@ -79,8 +84,11 @@ body._lock {
 }
 .appScreenshots img:not(:last-child) {
     margin-right: 120px;
+    margin: auto;
 }
 .appScreenshots img {
+    display: block;
+    margin: auto;
     width: 190px;
     border: 2px solid #fff;
     border-radius: 16px;
@@ -133,8 +141,71 @@ body._lock {
 #Main a > .page__section_1 {
     visibility: hidden;
 }
-
-@media (max-width: 592px) {
+@media (min-width:900px) {
+    .page__section_2 {
+        max-width: 100%;
+        display: flex;
+    }
+    .appScreenshots img:not(:last-child) {
+        margin-right: 120px;
+    }
+    .appScreenshots img {
+        display: inline;
+        width: 190px;
+        border: 2px solid #fff;
+        border-radius: 16px;
+        transition: 1s;
+    }
+}
+@media (max-width:900px) {
+    .appScreenshots img:not(:last-child) {
+        margin-right: 80px;
+    }
+    .appScreenshots img {
+        display: inline;
+        width: 190px;
+        border: 2px solid #fff;
+        border-radius: 16px;
+        transition: 1s;
+    }
+}
+@media (max-width:800px) {
+    .appScreenshots img:not(:last-child) {
+        margin-right: 40px;
+    }
+    .appScreenshots img {
+        display: inline;
+        width: 190px;
+        border: 2px solid #fff;
+        border-radius: 16px;
+        transition: 1s;
+    }
+}
+@media (max-width:710px) {
+    .appScreenshots img:not(:last-child) {
+        margin-right: 20px;
+    }
+    .appScreenshots img {
+        display: inline;
+        width: 190px;
+        border: 2px solid #fff;
+        border-radius: 16px;
+        transition: 1s;
+    }
+}
+@media (max-width:710px) {
+    .appScreenshots img:not(:last-child) {
+        margin-right: 8px;
+    }
+    .appScreenshots img {
+        display: inline;
+        width: 190px;
+        border: 2px solid #fff;
+        border-radius: 16px;
+        transition: 1s;
+    }
+}
+@media (max-width: 646px) {
     .logo {
         max-width: 240px;
     }
@@ -142,11 +213,11 @@ body._lock {
         width: 120px;
     }
     .page__section_2 {
-        max-width: 250px;
-        display: block;
+        max-width: 100%;
     }
     .appScreenshots img:not(:first-child) {
         margin-top: 20px;
+        display: block;
     }
 }
 @media (max-width: 442px) {
